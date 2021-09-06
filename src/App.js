@@ -12,15 +12,13 @@ let videoPlayerSize = {
 function App() {
    return (
       <div className="App">
-         <header className="App-header">
-            <DragAndDrop videoPlayerSize={videoPlayerSize}>
-               <div className="videoPlayer" style={videoPlayerSize}>
-                  <video controls>
-                     <source src={video} type="video/mp4" />
-                  </video>
-               </div>
-            </DragAndDrop>
-         </header>
+         <DragAndDrop videoPlayerSize={videoPlayerSize}>
+            <div className="videoPlayer" style={videoPlayerSize}>
+               <video controls>
+                  <source src={video} type="video/mp4" />
+               </video>
+            </div>
+         </DragAndDrop>
       </div>
    );
 }
